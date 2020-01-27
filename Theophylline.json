@@ -1,0 +1,762 @@
+{
+  "Version": 76,
+  "Individuals": [
+    {
+      "Name": "Adult",
+      "Seed": 851388078,
+      "OriginData": {
+        "CalculationMethods": [
+          "SurfaceAreaPlsInt_VAR1",
+          "Body surface area - Mosteller"
+        ],
+        "Species": "Human",
+        "Population": "European_ICRP_2002",
+        "Gender": "MALE",
+        "Age": {
+          "Value": 30.0,
+          "Unit": "year(s)"
+        }
+      },
+      "Molecules": [
+        {
+          "Name": "CYP1A2",
+          "Type": "Enzyme",
+          "MembraneLocation": "Apical",
+          "TissueLocation": "Intracellular",
+          "IntracellularVascularEndoLocation": "Endosomal",
+          "Expression": [
+            {
+              "Name": "Gonads",
+              "Value": 0.00029559748428
+            },
+            {
+              "Name": "Kidney",
+              "Value": 4.4025157233E-06
+            },
+            {
+              "Name": "Periportal",
+              "Value": 1.0
+            },
+            {
+              "Name": "Pericentral",
+              "Value": 1.0
+            },
+            {
+              "Name": "Lung",
+              "Value": 2.4947589099E-05
+            }
+          ],
+          "Ontogeny": {
+            "Name": "CYP1A2"
+          }
+        },
+        {
+          "Name": "CYP2E1",
+          "Type": "Enzyme",
+          "MembraneLocation": "Apical",
+          "TissueLocation": "Intracellular",
+          "IntracellularVascularEndoLocation": "Endosomal",
+          "Expression": [
+            {
+              "Name": "Brain",
+              "Value": 0.00069717257788
+            },
+            {
+              "Name": "Gonads",
+              "Value": 0.0011140006271
+            },
+            {
+              "Name": "Kidney",
+              "Value": 0.0004242055368
+            },
+            {
+              "Name": "Periportal",
+              "Value": 1.0
+            },
+            {
+              "Name": "Pericentral",
+              "Value": 1.0
+            },
+            {
+              "Name": "Lung",
+              "Value": 0.00063815267711
+            },
+            {
+              "Name": "SmallIntestine",
+              "Value": 0.0081152363563
+            },
+            {
+              "Name": "Duodenum",
+              "Value": 0.0081152363563
+            },
+            {
+              "Name": "UpperJejunum",
+              "Value": 0.0081152363563
+            },
+            {
+              "Name": "LowerJejunum",
+              "Value": 0.0081152363563
+            },
+            {
+              "Name": "UpperIleum",
+              "Value": 0.0081152363563
+            },
+            {
+              "Name": "LowerIleum",
+              "Value": 0.0081152363563
+            }
+          ],
+          "Ontogeny": {
+            "Name": "CYP2E1"
+          }
+        }
+      ]
+    }
+  ],
+  "Compounds": [
+    {
+      "Name": "Theophylline",
+      "IsSmallMolecule": true,
+      "PlasmaProteinBindingPartner": "Albumin",
+      "Lipophilicity": [
+        {
+          "Name": "Measurement",
+          "Parameters": [
+            {
+              "Name": "Lipophilicity",
+              "Value": 1.23,
+              "Unit": "Log Units"
+            }
+          ]
+        }
+      ],
+      "FractionUnbound": [
+        {
+          "Name": "Measurement",
+          "Species": "Human",
+          "Parameters": [
+            {
+              "Name": "Fraction unbound (plasma, reference value)",
+              "Value": 0.4
+            }
+          ]
+        }
+      ],
+      "Solubility": [
+        {
+          "Name": "Measurement",
+          "Parameters": [
+            {
+              "Name": "Solubility at reference pH",
+              "Value": 7360.0,
+              "Unit": "mg/l"
+            },
+            {
+              "Name": "Reference pH",
+              "Value": 7.0
+            }
+          ]
+        }
+      ],
+      "PkaTypes": [
+        {
+          "Type": "Acid",
+          "Pka": 8.81,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "Processes": [
+        {
+          "InternalName": "GlomerularFiltration",
+          "DataSource": "GFR",
+          "Species": "Human",
+          "Parameters": [
+            {
+              "Name": "GFR fraction",
+              "Value": 0.15
+            }
+          ]
+        },
+        {
+          "InternalName": "MetabolizationIntrinsic_FirstOrder",
+          "DataSource": "CYP1A2",
+          "Species": "Human",
+          "Molecule": "CYP1A2",
+          "Parameters": [
+            {
+              "Name": "Intrinsic clearance",
+              "Value": 0.0,
+              "Unit": "l/min"
+            },
+            {
+              "Name": "Specific clearance",
+              "Value": 0.028,
+              "Unit": "1/min",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "InternalName": "MetabolizationIntrinsic_FirstOrder",
+          "DataSource": "CYP2E1",
+          "Species": "Human",
+          "Molecule": "CYP2E1",
+          "Parameters": [
+            {
+              "Name": "Intrinsic clearance",
+              "Value": 0.0,
+              "Unit": "l/min"
+            },
+            {
+              "Name": "Specific clearance",
+              "Value": 0.002,
+              "Unit": "1/min",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        }
+      ],
+      "CalculationMethods": [
+        "Cellular partition coefficient method - PK-Sim Standard",
+        "Cellular permeability - PK-Sim Standard"
+      ],
+      "Parameters": [
+        {
+          "Name": "Molecular weight",
+          "Value": 180.16,
+          "Unit": "g/mol"
+        }
+      ]
+    }
+  ],
+  "Protocols": [
+    {
+      "Name": "IV infusion Gisclone",
+      "ApplicationType": "Intravenous",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "InputDose",
+          "Value": 4.5,
+          "Unit": "mg/kg"
+        },
+        {
+          "Name": "Infusion time",
+          "Value": 30.0,
+          "Unit": "min"
+        }
+      ]
+    },
+    {
+      "Name": "IV infusion Steinigans",
+      "ApplicationType": "Intravenous",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "InputDose",
+          "Value": 506.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "Infusion time",
+          "Value": 8.0,
+          "Unit": "h"
+        }
+      ]
+    }
+  ],
+  "Simulations": [
+    {
+      "Name": "IVsim-Adult-Gisclon-1997",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Theophylline-Adults-Gisclone-1997"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 48.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|IV infusion Gisclone|Application_1|ProtocolSchemaItem|Infusion time",
+          "Value": 30.0,
+          "Unit": "min"
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Theophylline|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Adult",
+      "Compounds": [
+        {
+          "Name": "Theophylline",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Processes": [
+            {
+              "Name": "CYP1A2-CYP1A2",
+              "MoleculeName": "CYP1A2"
+            },
+            {
+              "Name": "CYP2E1-CYP2E1",
+              "MoleculeName": "CYP2E1"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "IV infusion Gisclone"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "IVsim-Adult-Gisclon-1997-Theophylline-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "IVsim-Adult-Gisclon-1997|Organism|PeripheralVenousBlood|Theophylline|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Theophylline-Adults-Gisclone-1997-Theophylline-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Theophylline-Adults-Gisclone-1997|Time ",
+              "Y": "Theophylline-Adults-Gisclone-1997|ObservedData|Peripheral Venous Blood|Plasma|Theophylline|Conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "OriginText": "Theophylline\nIVsim-Adult-Gisclon-1997\n2020-01-25 15:13"
+        }
+      ]
+    },
+    {
+      "Name": "IVsim-Adult-Steinijans-1987",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Theophylline-Adults-Steinijans-1987"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 48.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|IV infusion Steinigans|Application_1|ProtocolSchemaItem|Infusion time",
+          "Value": 480.0,
+          "Unit": "min"
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Theophylline|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Adult",
+      "Compounds": [
+        {
+          "Name": "Theophylline",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Processes": [
+            {
+              "Name": "CYP1A2-CYP1A2",
+              "MoleculeName": "CYP1A2"
+            },
+            {
+              "Name": "CYP2E1-CYP2E1",
+              "MoleculeName": "CYP2E1"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "IV infusion Steinigans"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "IVsim-Adult-Steinijans-1987-Theophylline-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "IVsim-Adult-Steinijans-1987|Organism|PeripheralVenousBlood|Theophylline|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Theophylline-Adults-Steinijans-1987-Theophylline-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Theophylline-Adults-Steinijans-1987|Time ",
+              "Y": "Theophylline-Adults-Steinijans-1987|ObservedData|Peripheral Venous Blood|Plasma|Theophylline|Conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "OriginText": "Theophylline\nIVsim-Adult-Steinijans-1987\n2020-01-25 15:14"
+        }
+      ]
+    }
+  ],
+  "ObservedData": [
+    {
+      "Name": "Theophylline-Adults-Gisclone-1997",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Egnyte\\Private\\esther.yun\\theophylline\\ObservedData\\theophylline-adults-Gisclone.xlsx.Sheet1"
+        },
+        {
+          "Name": "File",
+          "Value": "theophylline-adults-Gisclone"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Sheet1"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Theophylline"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Conc ",
+          "QuantityInfo": {
+            "Name": "Conc ",
+            "Path": "Theophylline-Adults-Gisclone-1997|ObservedData|Peripheral Venous Blood|Plasma|Theophylline|Conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2018-02-11T23:17:03.7705348-05:00",
+            "Source": "theophylline-adults-Gisclone.Sheet1.Conc [ug/ml]",
+            "MolWeight": 180.16
+          },
+          "Values": [
+            4.97123,
+            10.3804007,
+            9.65631,
+            9.29389,
+            8.05476,
+            6.26201,
+            3.85747981,
+            2.36726,
+            1.50544,
+            0.563201,
+            0.172948
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Name": "Time ",
+          "Path": "Theophylline-Adults-Gisclone-1997|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2018-02-11T23:17:03.7705348-05:00",
+          "Source": "theophylline-adults-Gisclone.Sheet1.Time [h]"
+        },
+        "Values": [
+          0.205244,
+          0.584717,
+          0.979306042,
+          1.66176,
+          3.02314,
+          6.03598976,
+          12.0127,
+          17.9386,
+          24.0971012,
+          35.7915,
+          48.0034981
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Theophylline-Adults-Steinijans-1987",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Egnyte\\Private\\esther.yun\\theophylline\\ObservedData\\theophylline-adults-iv-Steinijans_506mg.xls.theophylline-adults-iv-Steinija"
+        },
+        {
+          "Name": "File",
+          "Value": "theophylline-adults-iv-Steinijans_506mg"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "theophylline-adults-iv-Steinija"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Theophylline"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Conc ",
+          "QuantityInfo": {
+            "Name": "Conc ",
+            "Path": "Theophylline-Adults-Steinijans-1987|ObservedData|Peripheral Venous Blood|Plasma|Theophylline|Conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2018-02-11T23:17:39.4795724-05:00",
+            "Source": "theophylline-adults-iv-Steinijans_506mg.theophylline-adults-iv-Steinija.Conc [mg/L]",
+            "MolWeight": 180.16
+          },
+          "Values": [
+            1.5,
+            2.88888884,
+            4.0,
+            5.05555534,
+            6.125,
+            7.05555534,
+            9.0,
+            7.55555534,
+            6.888889,
+            5.79166651,
+            5.138889,
+            4.125,
+            3.30555558,
+            2.69444442,
+            2.23611116,
+            1.79166663,
+            1.13888884,
+            0.4722222,
+            0.2777778,
+            0.152777791
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Name": "Time ",
+          "Path": "Theophylline-Adults-Steinijans-1987|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2018-02-11T23:17:39.4795724-05:00",
+          "Source": "theophylline-adults-iv-Steinijans_506mg.theophylline-adults-iv-Steinija.Time [h]"
+        },
+        "Values": [
+          0.93834585,
+          1.8766917,
+          2.92330837,
+          4.006015,
+          4.980451,
+          5.99097729,
+          7.867669,
+          8.95037651,
+          9.996992,
+          11.9819546,
+          14.0030079,
+          16.096241,
+          17.936842,
+          19.9939842,
+          22.0150375,
+          23.92782,
+          27.9699268,
+          36.0180435,
+          41.9368439,
+          48.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    }
+  ]
+}
