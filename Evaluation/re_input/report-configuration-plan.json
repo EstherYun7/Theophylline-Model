@@ -1,0 +1,351 @@
+{
+  "SimulationMappings": [
+    {
+      "Project": "Theophylline",
+      "Simulation": "IVsim-Adult-Gisclon-1997",
+      "Path": "Theophylline/IVsim-Adult-Gisclon-1997/"
+    },
+    {
+      "Project": "Theophylline",
+      "Simulation": "IVsim-Adult-Steinijans-1987",
+      "Path": "Theophylline/IVsim-Adult-Steinijans-1987/"
+    }
+  ],
+  "ObservedDataSets": [
+    {
+      "Id": "Theophylline-Adults-Gisclone-1997",
+      "Path": "ObservedData/Theophylline-Adults-Gisclone-1997.csv"
+    },
+    {
+      "Id": "Theophylline-Adults-Steinijans-1987",
+      "Path": "ObservedData/Theophylline-Adults-Steinijans-1987.csv"
+    }
+  ],
+  "Plots": {
+    "AxesSettings": {
+      "GOFMergedPlotsPredictedVsObserved": [
+        {
+          "Type": "X",
+          "Dimension": "Concentration (mass)",
+          "Unit": "µg/l",
+          "GridLines": false,
+          "Scaling": "Log"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Concentration (mass)",
+          "Unit": "µg/l",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ],
+      "GOFMergedPlotsResidualsOverTime": [
+        {
+          "Type": "X",
+          "Dimension": "Time",
+          "Unit": "h",
+          "GridLines": false,
+          "Scaling": "Linear"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Linear"
+        }
+      ],
+      "ComparisonTimeProfile": [
+        {
+          "Type": "X",
+          "Dimension": "Time",
+          "Unit": "h",
+          "GridLines": false,
+          "Scaling": "Linear"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Concentration (mass)",
+          "Unit": "µg/l",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ],
+      "PKRatioPlots": [
+        {
+          "Type": "X",
+          "Dimension": "Age",
+          "Unit": "year(s)",
+          "GridLines": false,
+          "Scaling": "Linear"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ]
+    },
+    "PlotSettings": {
+      "ChartWidth": 500,
+      "ChartHeight": 400,
+      "Fonts": {
+        "AxisSize": 11,
+        "LegendSize": 9,
+        "OriginSize": 9,
+        "FontFamilyName": "Arial",
+        "WatermarkSize": 40
+      }
+    },
+    "GOFMergedPlots": [
+      {
+        "Title": "Goodness of fit plor for concentration in plasma",
+        "SectionId": 32,
+        "Artifacts": [
+          "Plot",
+          "GMFE",
+          "Measure"
+        ],
+        "PlotType": "predictedVsObserved|residualsOverTime",
+        "Groups": [
+          {
+            "Caption": "Intravenous administration",
+            "Symbol": "Circle",
+            "OutputMappings": [
+              {
+                "Project": "Theophylline",
+                "Simulation": "IVsim-Adult-Gisclon-1997",
+                "Output": "Organism|PeripheralVenousBlood|Theophylline|Plasma (Peripheral Venous Blood)",
+                "ObservedData": "Theophylline-Adults-Gisclone-1997",
+                "Color": "#FF0000"
+              }
+            ]
+          },
+          {
+            "Caption": "Intravenous administration",
+            "Symbol": "Square",
+            "OutputMappings": [
+              {
+                "Project": "Theophylline",
+                "Simulation": "IVsim-Adult-Steinijans-1987",
+                "Output": "Organism|PeripheralVenousBlood|Theophylline|Plasma (Peripheral Venous Blood)",
+                "ObservedData": "Theophylline-Adults-Steinijans-1987",
+                "Color": "#FF0000"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "ComparisonTimeProfilePlots": [],
+    "PKRatioPlots": [],
+    "TimeProfile": [
+      {
+        "SectionId": 33,
+        "Project": "Theophylline",
+        "Simulation": "IVsim-Adult-Gisclon-1997",
+        "Plot": {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "IVsim-Adult-Gisclon-1997-Theophylline-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "IVsim-Adult-Gisclon-1997|Organism|PeripheralVenousBlood|Theophylline|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Theophylline-Adults-Gisclone-1997-Theophylline-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Theophylline-Adults-Gisclone-1997|Time ",
+              "Y": "Theophylline-Adults-Gisclone-1997|ObservedData|Peripheral Venous Blood|Plasma|Theophylline|Conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "OriginText": "Theophylline\nIVsim-Adult-Gisclon-1997\n2020-01-25 15:13"
+        }
+      },
+      {
+        "SectionId": 33,
+        "Project": "Theophylline",
+        "Simulation": "IVsim-Adult-Steinijans-1987",
+        "Plot": {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "IVsim-Adult-Steinijans-1987-Theophylline-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "IVsim-Adult-Steinijans-1987|Organism|PeripheralVenousBlood|Theophylline|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Theophylline-Adults-Steinijans-1987-Theophylline-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Theophylline-Adults-Steinijans-1987|Time ",
+              "Y": "Theophylline-Adults-Steinijans-1987|ObservedData|Peripheral Venous Blood|Plasma|Theophylline|Conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "OriginText": "Theophylline\nIVsim-Adult-Steinijans-1987\n2020-01-25 15:14"
+        }
+      }
+    ]
+  },
+  "Inputs": [
+    {
+      "SectionId": 31,
+      "Path": "Inputs/Theophylline/Compound/Theophylline.md"
+    }
+  ],
+  "Sections": [
+    {
+      "Id": 1,
+      "Title": "1 Introduction",
+      "Content": "Content/Section1_Introduction.md",
+      "Sections": []
+    },
+    {
+      "Id": 2,
+      "Title": "2 Methods",
+      "Content": "Content/Section2_Methods.md",
+      "Sections": [
+        {
+          "Id": 21,
+          "Title": "2.1 Modeling Strategy",
+          "Content": "Content/Section2.1_Modeling_Strategy.md",
+          "Sections": []
+        },
+        {
+          "Id": 22,
+          "Title": "2.2 Data",
+          "Content": "Content/Section2.2_Data.md",
+          "Sections": []
+        },
+        {
+          "Id": 23,
+          "Title": "2.3 Model Parameters and Assumptions",
+          "Content": "Content/Section2.3_Model_Parameters_and_Assumptions.md",
+          "Sections": []
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "Title": "3 Results and Discussion",
+      "Content": "Content/Section3_Results_and_Discussion.md",
+      "Sections": [
+        {
+          "Id": 31,
+          "Title": "3.1 Final input parameters",
+          "Content": "Content/Input_table.md",
+          "Sections": []
+        },
+        {
+          "Id": 32,
+          "Title": "3.2 Diagnostics Plots",
+          "Content": "Content/GOF_diagnostics.md",
+          "Sections": []
+        },
+        {
+          "Id": 33,
+          "Title": "3.3: Concentration-Time Profiles",
+          "Content": "Content/Concentration_time_profiles.md",
+          "Sections": [
+            {
+              "Id": 331,
+              "Title": "3.3.1 Model Building",
+              "Content": "Content/Concentration_time_profiles_building.md",
+              "Sections": []
+            },
+            {
+              "Id": 332,
+              "Title": "3.3.2 Model Verification",
+              "Content": "Content/Concentration_time_profiles_verification.md",
+              "Sections": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "Title": "4 Conclusion",
+      "Content": "Content/Section4_Conclusion.md",
+      "Sections": []
+    },
+    {
+      "Id": 5,
+      "Title": "5 References",
+      "Content": "Content/References.md",
+      "Sections": []
+    }
+  ],
+  "Intro": [
+    {
+      "Path": "Intro/titlepage.md"
+    }
+  ]
+}

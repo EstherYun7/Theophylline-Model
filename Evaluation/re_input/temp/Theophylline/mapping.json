@@ -1,0 +1,144 @@
+{
+  "SimulationMappings": [
+    {
+      "Project": "Theophylline",
+      "Simulation": "IVsim-Adult-Gisclon-1997",
+      "Path": "Theophylline/IVsim-Adult-Gisclon-1997/"
+    },
+    {
+      "Project": "Theophylline",
+      "Simulation": "IVsim-Adult-Steinijans-1987",
+      "Path": "Theophylline/IVsim-Adult-Steinijans-1987/"
+    }
+  ],
+  "ObservedDataMappings": [
+    {
+      "Id": "Theophylline-Adults-Gisclone-1997",
+      "Path": "ObservedData/Theophylline-Adults-Gisclone-1997.csv"
+    },
+    {
+      "Id": "Theophylline-Adults-Steinijans-1987",
+      "Path": "ObservedData/Theophylline-Adults-Steinijans-1987.csv"
+    }
+  ],
+  "Plots": [
+    {
+      "SectionId": 33,
+      "Project": "Theophylline",
+      "Simulation": "IVsim-Adult-Gisclon-1997",
+      "Plot": {
+        "$type": "PKSim.Core.Snapshots.CurveChart, PKSim.Core",
+        "Axes": [
+          {
+            "Unit": "h",
+            "Dimension": "Time",
+            "Type": "X",
+            "GridLines": false,
+            "Visible": true,
+            "DefaultColor": "#FFFFFF",
+            "DefaultLineStyle": "None",
+            "Scaling": "Linear",
+            "NumberMode": "Normal"
+          },
+          {
+            "Unit": "µmol/l",
+            "Dimension": "Concentration (molar)",
+            "Type": "Y",
+            "GridLines": false,
+            "Visible": true,
+            "DefaultColor": "#FFFFFF",
+            "DefaultLineStyle": "Solid",
+            "Scaling": "Log",
+            "NumberMode": "Normal"
+          }
+        ],
+        "Curves": [
+          {
+            "Name": "IVsim-Adult-Gisclon-1997-Theophylline-Peripheral Venous Blood-Plasma-Concentration",
+            "X": "Time",
+            "Y": "IVsim-Adult-Gisclon-1997|Organism|PeripheralVenousBlood|Theophylline|Plasma (Peripheral Venous Blood)",
+            "CurveOptions": {
+              "Color": "#FF0000",
+              "LegendIndex": 1
+            }
+          },
+          {
+            "Name": "Theophylline-Adults-Gisclone-1997-Theophylline-Peripheral Venous Blood-Plasma-Conc ",
+            "X": "Theophylline-Adults-Gisclone-1997|Time ",
+            "Y": "Theophylline-Adults-Gisclone-1997|ObservedData|Peripheral Venous Blood|Plasma|Theophylline|Conc ",
+            "CurveOptions": {
+              "Color": "#0000FF",
+              "LegendIndex": 2,
+              "LineStyle": "None",
+              "Symbol": "Circle"
+            }
+          }
+        ],
+        "Name": "Time Profile Analysis",
+        "OriginText": "Theophylline\nIVsim-Adult-Gisclon-1997\n2020-01-25 15:13"
+      }
+    },
+    {
+      "SectionId": 33,
+      "Project": "Theophylline",
+      "Simulation": "IVsim-Adult-Steinijans-1987",
+      "Plot": {
+        "$type": "PKSim.Core.Snapshots.CurveChart, PKSim.Core",
+        "Axes": [
+          {
+            "Unit": "h",
+            "Dimension": "Time",
+            "Type": "X",
+            "GridLines": false,
+            "Visible": true,
+            "DefaultColor": "#FFFFFF",
+            "DefaultLineStyle": "None",
+            "Scaling": "Linear",
+            "NumberMode": "Normal"
+          },
+          {
+            "Unit": "µmol/l",
+            "Dimension": "Concentration (molar)",
+            "Type": "Y",
+            "GridLines": false,
+            "Visible": true,
+            "DefaultColor": "#FFFFFF",
+            "DefaultLineStyle": "Solid",
+            "Scaling": "Log",
+            "NumberMode": "Normal"
+          }
+        ],
+        "Curves": [
+          {
+            "Name": "IVsim-Adult-Steinijans-1987-Theophylline-Peripheral Venous Blood-Plasma-Concentration",
+            "X": "Time",
+            "Y": "IVsim-Adult-Steinijans-1987|Organism|PeripheralVenousBlood|Theophylline|Plasma (Peripheral Venous Blood)",
+            "CurveOptions": {
+              "Color": "#FF0000",
+              "LegendIndex": 1
+            }
+          },
+          {
+            "Name": "Theophylline-Adults-Steinijans-1987-Theophylline-Peripheral Venous Blood-Plasma-Conc ",
+            "X": "Theophylline-Adults-Steinijans-1987|Time ",
+            "Y": "Theophylline-Adults-Steinijans-1987|ObservedData|Peripheral Venous Blood|Plasma|Theophylline|Conc ",
+            "CurveOptions": {
+              "Color": "#0000FF",
+              "LegendIndex": 2,
+              "LineStyle": "None",
+              "Symbol": "Circle"
+            }
+          }
+        ],
+        "Name": "Time Profile Analysis",
+        "OriginText": "Theophylline\nIVsim-Adult-Steinijans-1987\n2020-01-25 15:14"
+      }
+    }
+  ],
+  "Inputs": [
+    {
+      "SectionId": 31,
+      "Path": "Inputs/Theophylline/Compound/Theophylline.md"
+    }
+  ]
+}

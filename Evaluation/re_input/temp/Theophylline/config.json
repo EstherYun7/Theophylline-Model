@@ -1,0 +1,32 @@
+{
+  "Project": "Theophylline",
+  "SnapshotFile": "C:/Egnyte/Private/esther.yun/Model Qual/Theophylline-Evaluation/Theophylline.json",
+  "OutputFolder": "C:\\Egnyte\\Private\\esther.yun\\Model Qual\\Theophylline-Evaluation\\Evaluation\\re_input",
+  "ObservedDataFolder": "C:\\Egnyte\\Private\\esther.yun\\Model Qual\\Theophylline-Evaluation\\Evaluation\\re_input\\ObservedData",
+  "InputsFolder": "C:\\Egnyte\\Private\\esther.yun\\Model Qual\\Theophylline-Evaluation\\Evaluation\\re_input\\Inputs",
+  "MappingFile": "C:\\Egnyte\\Private\\esther.yun\\Model Qual\\Theophylline-Evaluation\\Evaluation\\re_input\\temp\\Theophylline\\mapping.json",
+  "TempFolder": "C:\\Egnyte\\Private\\esther.yun\\Model Qual\\Theophylline-Evaluation\\Evaluation\\re_input\\temp\\Theophylline",
+  "ReportConfigurationFile": "C:\\Egnyte\\Private\\esther.yun\\Model Qual\\Theophylline-Evaluation\\Evaluation\\re_input\\report-configuration-plan.json",
+  "SimulationPlots": [
+    {
+      "Simulation": "IVsim-Adult-Gisclon-1997",
+      "Project": "Theophylline",
+      "SectionId": 33
+    },
+    {
+      "Simulation": "IVsim-Adult-Steinijans-1987",
+      "Project": "Theophylline",
+      "SectionId": 33
+    }
+  ],
+  "Inputs": [
+    {
+      "Type": "Compound",
+      "Name": "Theophylline",
+      "Project": "Theophylline",
+      "SectionId": 31
+    }
+  ],
+  "BuildingBlocks": [],
+  "SimulationParameters": []
+}
